@@ -1,9 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://student-task-manager-1.onrender.com/api",
+  baseURL: "https://student-task-manager-1.onrender.com/api",   // Render backend URL
 });
 
-
 export default API;
-
