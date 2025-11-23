@@ -1,0 +1,246 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.auth-container, .task-container {
+  margin: 30px auto;
+  width: 350px;
+  padding: 20px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  text-align: center;
+}
+
+input {
+  padding: 8px;
+  width: 90%;
+  margin: 5px 0;
+}
+
+button {
+  padding: 8px 12px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #1e1e2f;
+  color: white;
+  padding: 20px;
+}
+
+.card, .dash-card {
+  width: 380px;
+  padding: 30px;
+  background: #2d2d3f;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
+}
+
+h2, h1 {
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #bbb;
+  margin-bottom: 20px;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  background: #6a5acd;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background: #7b6df0;
+}
+
+.logout {
+  margin-top: 10px;
+  background: #e44;
+}
+
+.message {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ffbf4d;
+}
+
+.switch {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.switch a {
+  color: #7b6df0;
+  text-decoration: none;
+}
+
+/* === GLOBAL BODY STYLING === */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #6dd5fa, #2980b9);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* === MAIN AUTH CONTAINER === */
+.auth-container, .task-container, .dashboard-container {
+  width: 400px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* === HEADINGS === */
+h2 {
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+h1 {
+  color: #fff;
+  font-size: 32px;
+}
+
+/* === INPUT FIELDS === */
+input {
+  width: 90%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+}
+
+/* === BUTTONS === */
+button {
+  width: 95%;
+  padding: 12px;
+  background-color: #1c6f9d;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #155477;
+  transform: scale(1.05);
+}
+
+/* === LINKS === */
+a {
+  display: block;
+  margin-top: 15px;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #002fff;
+}
+
+/* TASK LIST CONTAINER */
+.task-list {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.task-item {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-item button {
+  width: auto;
+  padding: 6px 12px;
+  margin-left: 6px;
+  font-size: 14px;
+}

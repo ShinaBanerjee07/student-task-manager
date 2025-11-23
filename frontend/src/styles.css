@@ -1,0 +1,170 @@
+/* ===== Global Page Setup ===== */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #1dc4e9, #01b0f1);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 40px;
+}
+
+/* ===== Page Wrapper ===== */
+.page-wrapper {
+  width: 600px;
+  max-width: 600px;
+  text-align: center;
+  color: #fff;
+}
+
+/* ===== Headings ===== */
+h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+/* ===== Input Row ===== */
+.input-box {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 25px;
+  justify-content: center;
+}
+
+.input-box input {
+  width: 75%;
+  padding: 14px 18px;
+  border-radius: 14px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background: #ffffff;
+  color: #000;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+  transition: .2s ease;
+}
+
+.input-box input:focus {
+  transform: scale(1.02);
+  box-shadow: 0 4px 22px rgba(0,0,0,0.25);
+}
+
+/* ===== Buttons ===== */
+.add-btn {
+  background: linear-gradient(135deg, #0c47ff, #005dea);
+  color: #fff;
+  padding: 14px 30px;
+  border-radius: 14px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all .25s ease;
+  box-shadow: 0 6px 18px rgba(0, 91, 234, 0.3);
+}
+
+.add-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(0, 91, 234, 0.45);
+}
+
+.logout {
+  margin-top: 30px;
+  background-color: #ff3b46;
+  padding: 12px 32px;
+  border-radius: 14px;
+  font-size: 18px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: .25s;
+}
+
+.logout:hover {
+  background-color: #d60a14;
+}
+
+/* ===== Task List Container ===== */
+.task-list {
+  margin-top: 5px;
+  list-style: none;
+  padding: 0;
+  max-height: 330px;
+  overflow-y: auto;
+}
+
+/* Custom Scrollbar */
+.task-list::-webkit-scrollbar {
+  width: 8px;
+}
+.task-list::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.5);
+  border-radius: 6px;
+}
+
+/* ===== Individual Task Item ===== */
+.task-item {
+  background: #ffffff;
+  color: #000;
+  width: 100%;
+  padding: 16px 20px;
+  margin: 10px 0;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+  transition: .2s ease;
+}
+
+.task-item:hover {
+  transform: scale(1.01);
+}
+
+.task-text {
+  flex: 1;
+  font-size: 18px;
+  margin-left: 12px;
+  cursor: pointer;
+  text-align: left;
+}
+
+/* Completed Task */
+.task-item.completed .task-text {
+  text-decoration: line-through;
+  color: #8a8a8a;
+}
+
+/* ===== Icons ===== */
+.check-icon {
+  font-size: 22px;
+  cursor: pointer;
+  margin-right: 8px;
+  color: #04c200;
+  transition: .2s ease;
+}
+
+.check-icon:hover {
+  transform: scale(1.25);
+}
+
+.delete-btn {
+  background: #005dea;
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .25s ease;
+}
+
+.delete-btn:hover {
+  background: #003bb5;
+  transform: scale(1.1);
+}
