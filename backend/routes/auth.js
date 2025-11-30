@@ -17,7 +17,7 @@ router.post("/register", async (req, res) => {
     const hashed = await bcrypt.hash(password, 10);
 
     // save user
-    const User = await User.create({ name, email, password: hashed });
+    const user = await User.create({ name, email, password: hashed });
 
     res.json({ message: "User created successfully", userId: user._id });
   } catch (err) {
