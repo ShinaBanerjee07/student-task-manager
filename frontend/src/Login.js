@@ -7,15 +7,16 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleLogin = async () => {
-    try {
-      const res = await API.post("/auth/login", { email, password });
-      localStorage.setItem("token", res.data.token);
-      window.location.href = "/dashboard";
-    } catch (error) {
-      setMessage("Invalid Credentials");
-    }
-  };
+ const handleLogin = async () => {
+  try {
+    const res = await API.post("/api/auth/login", { email, password });
+    localStorage.setItem("token", res.data.token);
+    window.location.href = "/dashboard";
+  } catch (error) {
+    setMessage("Invalid Credentials");
+  }
+};
+
 
   return (
     <div className="container">
